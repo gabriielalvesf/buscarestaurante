@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+        <ui:composition template="./index.xhtml">
+
+            <ui:define name="conteudo">
+                <section id="content-cliente" class="adicionar">
+                    <h1>Adicinar Cliente</h1>
+                    <p>Preenchar os campos abaixo corretamente.</p>
+                    <h:form>
+                        <h3>Dados Empresariais</h3>
+                        <h:outputLabel value="Razão Social:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Nome Fantasia:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="CNPJ:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}" class="cnpj"/>
+                        
+                        <h:outputLabel value="Inscrição Estadual:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Inscrição Municipal:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Telefone:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}" class="telefone" />
+                        
+                        <h:outputLabel value="Endereço:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Numero:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Bairro:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="CEP:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}" class="cep"/>
+                        
+                        <h:outputLabel value="Complemento:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h3>Dados Pessoais</h3>
+                        
+                        <h:outputLabel value="Nome para Contato:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="E-mail:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Site:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Usuário"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:outputLabel value="Senha:"/>
+                        <h:inputText value="#{pessoaBean.pessoa.nome}"/>
+                        
+                        <h:commandButton actionListener="adicionar-cliente.xhtml" class="orange g2" value="Adicionar"></h:commandButton>
+                    </h:form>
+                </section>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

@@ -1,0 +1,332 @@
+        @media (min-width: 480px) and  (max-width:960px){
+        body {
+            background: url('../image/bg.png') repeat;
+            font-size: 12px;
+            font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+            color: #000000;  
+        }
+        
+        aside#left{
+            position: fixed;
+            top: 25px;
+            left: 25px;
+        }
+        
+        #user-panel{
+            margin-bottom: 100px;
+        }
+        
+        #user-img{
+            width: 70px;
+            height: 70px;
+            float: left;
+            border-radius: 4px;
+            -o-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+        }
+        
+        .av-overlay{
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            border-radius: 3px;
+            position: absolute;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+            background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+        }
+        
+        #user-info {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 3px;
+            color: #eee;
+            opacity: 0;
+            text-shadow: 0 1px 0 #000;
+            -webkit-transition: opacity 0.3s ease;
+            -moz-transition: opacity 0.3s ease;
+            -o-transition: opacity 0.3s ease;
+            font-family: "Trebuchet MS";
+          }
+          
+          #user-info.show {
+            opacity: 1;
+          }
+          
+          #user-name,
+          #user-role {
+            float: left;
+            width: 100%;
+            font-size: 10px;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          
+          #user-name {
+            font-weight: bold;
+            margin-top: 14px;
+          }
+          
+          #user-role {
+            color: #bbb;
+            margin-top: 4px;
+          }
+          
+          #user-btn {
+            position: absolute;
+            width: 66px;
+            height: 20px;
+            padding: 3px 0 2px 0;
+            left: 2px;
+            right: 2px;
+            bottom: 2px;
+            border-radius: 3px;
+          }
+          
+          /*MENU NAV*/
+          
+          aside > nav#menuPrincipal{
+              width:70px;
+              height: 450px;
+              background: rgba(0, 0, 0, 0.2);
+              border: 1px solid rgba(0, 0, 0, 0.3);
+              box-shadow: 0 1px 0 rgba(255, 255, 255, 0.07), 0 -1px 1px rgba(255, 255, 255, 0.05);
+              border-radius: 4px;
+              -o-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -webkit-border-radius: 4px;
+          }
+          
+          aside > nav#menuPrincipal > ul{
+              list-style: none;
+          }
+          
+          aside > nav#menuPrincipal > ul > li{
+                float: left;
+                width: 100%;
+                text-align: center;
+                font-size: 10px;
+                color: #999;
+                cursor: pointer;
+                line-height: 16px;
+                padding-bottom: 6px;
+                position: relative;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+                background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+                background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+                -webkit-transition: all 0.15s ease-in-out;
+                -moz-transition: all 0.15s ease-in-out;
+                -o-transition: all 0.15s ease-in-out;
+          }
+          
+          aside > nav#menuPrincipal > ul > li:first-of-type {
+            border-radius: 3px 3px 0 0;
+          }
+          
+          aside > nav#menuPrincipal > ul > li:hover {
+            color: #bbb;
+            background-color: rgba(255, 255, 255, 0.03);
+          }
+          
+          aside > nav#menuPrincipal > ul > lili.active {
+            color: #f0a602;
+          }
+          
+          aside > nav#menuPrincipal > ul > lili.active .icon {
+            color: #f0a602;
+          }
+          
+          aside > nav#menuPrincipal > ul > li#logout {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            border-bottom: 0;
+            border-radius: 0 0 2px 2px;
+            border-top: 1px solid rgba(0, 0, 0, 0.4);
+          }
+          
+          aside > nav#menuPrincipal > ul > li > span {
+            width: 100%;
+            height: 25px;
+            font-size: 25px;
+            display: block;
+            padding: 12px 0 10px 0;
+            color: #bbb;
+            -webkit-text-stroke: 0.24px;
+            -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(255, 255, 255, 0.6)));
+          }
+          
+          aside > nav#menuPrincipal > ul > li > a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+          }
+          
+          
+          /* MODAL */
+
+            #modal-user{
+                width: 420px;
+                height: 215px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                margin:-112px 0 0 -210px;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+                box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 10px rgba(0, 0, 0, 0.4) !important;
+                background-color: #2c2c2c;
+                opacity: 0;
+                visibility: hidden;
+                border-radius: 5px;
+                -o-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -webkit-transition: opacity 0.5s ease;
+                -moz-transition: opacity 0.5s ease;
+                -o-transition: opacity 0.5s ease;
+                color:#888888;
+                font-family: 'Amble';
+            }
+
+            #modal-user.show{
+               opacity: 1;
+                visibility: visible; 
+            }
+
+            /*.tab-user{
+                width: 70%;
+                height: 50px;
+                background:#fff;
+            }*/
+
+
+            ul.simpleTabsNavigation { 
+                position: absolute;
+                bottom: 0;
+                background-color: rgba(255, 255, 255, 0.06);
+                width: 100%;
+                height: 40px;
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+            }
+
+            ul.simpleTabsNavigation li { 
+                list-style:none; 
+                display:inline; 
+                margin:0; 
+                padding:0;
+            }
+
+            ul.simpleTabsNavigation li:first-of-type {
+                margin:0 0 0 10px;
+            }
+
+            ul.simpleTabsNavigation li a { 
+                padding:3px 10px; 
+                font-size:20px;
+                text-decoration:none; 
+                color:#000;
+                line-height: 40px;
+            }
+
+            ul.simpleTabsNavigation li a:hover { 
+                text-decoration:none;
+                color:#fff; 
+            }
+
+            ul.simpleTabsNavigation li a.current {  
+                color:#cf8d00; 
+            }
+
+            div.simpleTabsContent { 
+                display:none;
+                height:50px;
+                padding-left: 10px;
+            }
+
+            div.simpleTabsContent.currentTab { 
+                display:block; 
+            }
+
+
+            #close-modal {
+                position: absolute;
+                width: 66px;
+                height: 20px;
+                padding: 3px 0 2px 0;
+                right: 10px;
+                bottom: 10px;
+                border-radius: 3px;
+            }
+
+            #title-modal-user {
+              float: left;
+              width: 100%;
+              padding: 12px 0;
+              margin-bottom: 10px;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+              background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), transparent) !important;
+              background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1), transparent) !important;
+            }
+            #title-modal-user h1,
+            #title-modal-user h2,
+            #title-modal-user {
+              font-size: 13px;
+              font-family: 'Amble';
+              font-weight: normal;
+              margin-left: 5px;
+            }
+
+            /* DASHBOARD MODAL */
+            #mod-home {
+              height: 132px;
+              padding-top: 10px;
+            }
+
+            #mod-home img {
+              width: 112px;
+              height: 112px;
+              float: left;
+              border-radius: 3px;
+              margin-right: 10px;
+              box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+            }
+            #usr-det {
+              float: left;
+              width: 276px;
+            }
+            #usr-det li {
+              width: 100%;
+              height: 24px;
+              float: left;
+            }
+            #usr-det li p {
+              display: block;
+              padding: 3px 0;
+            }
+            #usr-det li span {
+              width: 100px;
+              float: left;
+              display: block;
+              font-weight: bold;
+            }
+            #mod-msg {
+              padding: 0;
+            }
+            .mod-conv {
+              height: 256px;
+            }
+            .mod-conv .conv-text .conv-input {
+              border-radius: 0;
+            }
+      }
