@@ -259,15 +259,30 @@
               width: 100% !important;
               display: block;
               float:left;
-              margin: 20px 0 3px 0;
+              margin: 10px 0 3px 0;
           }
           
-          #content-cliente.adicionar input[type=text]{
+          #content-cliente h3{
+              width: 100%;
+              font-family: "Amble";
+              font-size:14px;
+              clear:left;
+              margin: 20px 0 10px 0;
+              color:#f2f2f2;
+          }
+          
+          #content-cliente.adicionar form{
               width: 50% !important;
               display: block;
               float:left;
           }
           
+          #content-cliente.adicionar input[type=text]{
+              width: 100% !important;
+              display: block;
+              float:left;
+              margin: 0px 0 10px 0;
+          }
           #dataTable{
               margin-top:60px;
               border-top: 1px solid rgba(255, 255, 255, 0.7);

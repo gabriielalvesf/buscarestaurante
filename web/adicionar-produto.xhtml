@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+        <ui:composition template="./index.xhtml">
+
+            <ui:define name="conteudo">
+                <section id="content-cliente" class="adicionar">
+                    <h1>Adicinar Produto</h1>
+                    <p>Preenchar os campos abaixo corretamente.</p>
+                    <h:form enctype="multipart/form-data">
+                        <h:outputLabel value="Nome do Produto:"/>
+                        <h:inputText value="#{clienteBean.cliente.razaoSocial}"/>
+                        
+                        <h:outputLabel value="Descrição:"/>
+                        <h:inputTextarea value="#{clienteBean.cliente.nomeFantasia}"/>
+                        
+                        <h:outputLabel value="Valor:"/>
+                        <h:inputText value="#{clienteBean.cliente.cnpj}"/>
+                        
+                        <p:fileUpload fileUploadListener="#{fileUploadController.handleFileUpload}" mode="advanced" update="messages" multiple="true" sizeLimit="100000" allowTypes="/(\.|\/)(gif|jpe?g|png)$/"/>  
+
+                        <p:growl id="messages" showDetail="true"/>
+                        <h:commandButton actionListener="clientes.xhtml" class="orange g3" value="Voltar"></h:commandButton>
+                        <h:commandButton actionListener="adicionar-cliente.xhtml" class="orange g4" value="Adicionar"></h:commandButton>
+                    </h:form>
+                </section>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

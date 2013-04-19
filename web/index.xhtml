@@ -2,7 +2,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:h="http://java.sun.com/jsf/html">
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -17,85 +18,85 @@
 
     <h:body>
         <ui:insert name="left">
-        <aside id="left">
-            <div id="user-panel">
-                <div class="av-overlay"></div>
-                <h:graphicImage alt="user" library="image/user" name="1.jpg" id="user-img"/>
-                <div id="user-info" class="">
-                    <span id="user-name">Gabriel Alves</span><span id="user-role">Administrator</span>
-                    <button id="user-btn" class="orange">Painel</button>
-                  </div>
-            </div>
-            
-            <nav id="menuPrincipal">
-                <ul>
-                    <li>
-                        <a href="#"></a>
-                        <span aria-hidden="true" class="icon-home"></span>
-                        Dashboard
-                    </li>
-                    
-                    <li>
-                        <a href="./clientes.xhtml"></a>
-                        <span aria-hidden="true" class="icon-user"></span>
-                        Clientes
-                    </li>
-                    
-                    <li>
-                        <a href="#"></a>
-                        <span aria-hidden="true" class="icon-images"></span>
-                        Restaurantes
-                    </li>
-                    
-                    <li>
-                        <a href="#"></a>
-                        <span aria-hidden="true" class="icon-checkmark"></span>
-                        Analytics
-                    </li>
-                    
-                    <li>
-                        <a href="#"></a>
-                        <span aria-hidden="true" class="icon-minus"></span>
-                        Sair
-                    </li>
-                </ul>
-            </nav>
-            
-        </aside>
-            
-            
-        <div id="modal-user" class="">
-            <div id="title-modal-user"><h2>Painel de Controle do Usuário</h2></div>
-            <div class="simpleTabs">
-
-            <div class="simpleTabsContent">
-                <div id="mod-home">
-                    <h:graphicImage alt="user" library="image/user" name="1.jpg" id="user-imgPanel"/>
-                    <ul id="usr-det">
-                        <li><p><span>Nome: </span>Gabriel Alves</p></li>
-                        <li><p><span>Cargo: </span>Administrador</p></li>
-                        <li><p><span>Contato: </span>gabriielalves@me.com</p></li>
-                        <li><p>Você tem <strong>2</strong> notificações pedentes</p></li>
-                    </ul>
+            <aside id="left">
+                <div id="user-panel">
+                    <div class="av-overlay"></div>
+                    <h:graphicImage alt="user" library="image/user" name="1.jpg" id="user-img"/>
+                    <div id="user-info" class="">
+                        <span id="user-name">Gabriel Alves</span><span id="user-role">Administrator</span>
+                        <button id="user-btn" class="orange">Painel</button>
+                    </div>
                 </div>
-            </div>
-            
-<!--            <div class="simpleTabsContent">Conteúdo referente a "Tab 2".</div>
-            
-            <div class="simpleTabsContent">Conteúdo referente a "Tab 3".</div>-->
-            
-            <ul class="simpleTabsNavigation">
-                <li><a href="#"><span aria-hidden="true" class="icon-home"></span></a></li>
-<!--                <li><a href="#"><span aria-hidden="true" class="icon-bubbles"></span></a></li>
-                <li><a href="#"><span aria-hidden="true" class="icon-pencil"></span></a></li>-->
-            </ul>
 
+                <nav id="menuPrincipal">
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                            <span aria-hidden="true" class="icon-home"></span>
+                            Dashboard
+                        </li>
+
+                        <li>
+                            <a href="./clientes.xhtml"></a>
+                            <span aria-hidden="true" class="icon-user"></span>
+                            Clientes
+                        </li>
+
+                        <li>
+                            <a href="#"></a>
+                            <span aria-hidden="true" class="icon-images"></span>
+                            Restaurantes
+                        </li>
+
+                        <li>
+                            <a href="#"></a>
+                            <span aria-hidden="true" class="icon-checkmark"></span>
+                            Analytics
+                        </li>
+
+                        <li>
+                            <a href="#"></a>
+                            <span aria-hidden="true" class="icon-minus"></span>
+                            Sair
+                        </li>
+                    </ul>
+                </nav>
+
+            </aside>
+
+
+            <div id="modal-user" class="">
+                <div id="title-modal-user"><h2>Painel de Controle do Usuário</h2></div>
+                <div class="simpleTabs">
+
+                    <div class="simpleTabsContent">
+                        <div id="mod-home">
+                            <h:graphicImage alt="user" library="image/user" name="1.jpg" id="user-imgPanel"/>
+                            <ul id="usr-det">
+                                <li><p><span>Nome: </span>Gabriel Alves</p></li>
+                                <li><p><span>Cargo: </span>Administrador</p></li>
+                                <li><p><span>Contato: </span>gabriielalves@me.com</p></li>
+                                <li><p>Você tem <strong>2</strong> notificações pedentes</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--            <div class="simpleTabsContent">Conteúdo referente a "Tab 2".</div>
+                                
+                                <div class="simpleTabsContent">Conteúdo referente a "Tab 3".</div>-->
+
+                    <ul class="simpleTabsNavigation">
+                        <li><a href="#"><span aria-hidden="true" class="icon-home"></span></a></li>
+                        <!--                <li><a href="#"><span aria-hidden="true" class="icon-bubbles"></span></a></li>
+                                        <li><a href="#"><span aria-hidden="true" class="icon-pencil"></span></a></li>-->
+                    </ul>
+
+                </div>
+                <button id="close-modal" class="green">Fechar</button>
             </div>
-            <button id="close-modal" class="green">Fechar</button>
-        </div>
         </ui:insert>
-        
-        
+
+
         <section id="content">
             <ui:insert name="conteudo">
                 <section id="box-user" class="box g5 row1">
@@ -109,12 +110,10 @@
                     <div class="btn-set-btm full">
                         <button id="add-usr" class="black has-icon"><span class="icon-user"></span>Adicionar usuário</button>
                         <button id="mng-usr" class="black has-icon"><span class="icon-spinner"></span>Gerenciar usuários</button>
-                      </div>
+                    </div>
                 </section>
             </ui:insert>
         </section>
-        
-        
     </h:body>
 
 </html>

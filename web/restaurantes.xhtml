@@ -11,10 +11,10 @@
 
             <ui:define name="conteudo">
                 <section id="content-cliente">
-                    <h1>Clientes</h1>
-                    <p>Todos gerenciamento dos clientes serão realizadas nessa pagina.</p>
+                    <h1>Produtos</h1>
+                    <p>Todos gerenciamento dos produtos serão realizadas nessa pagina.</p>
                     <h:form>
-                        <h:button outcome="adicionar-cliente.xhtml" class="orange g2" value="Adicionar"></h:button>
+                        <h:button outcome="adicionar-produto.xhtml" class="orange g2" value="Adicionar"></h:button>
                     </h:form>
 
                     <section id="dataTable">
@@ -25,41 +25,35 @@
                                          paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                                          rowsPerPageTemplate="5,10,15">
                                 <f:facet name="header">
-                                    Lista de Clientes
+                                    Lista de Produtos
                                 </f:facet>
 
                                 <p:column>
                                     <f:facet name="header">
-                                        <h:outputText value="Nome Fantasia" />
+                                        <h:outputText value="Nome do Restaurante" />
                                     </f:facet>
                                     <h:outputText value="#{car.model}" />
                                 </p:column>
 
                                 <p:column>
                                     <f:facet name="header">
-                                        <h:outputText value="CNPJ" />
+                                        <h:outputText value="Nome do Produto" />
                                     </f:facet>
                                     <h:outputText value="#{car.year}" />
                                 </p:column>
 
                                 <p:column>
                                     <f:facet name="header">
-                                        <h:outputText value="E-mail" />
+                                        <h:outputText value="Valor do Produto" />
                                     </f:facet>
                                     <h:outputText value="#{car.manufacturer}" />
                                 </p:column>
 
                                 <p:column>
                                     <f:facet name="header">
-                                        <h:outputText value="Contato" />
-                                    </f:facet>
-                                    <h:outputText value="#{car.color}" />
-                                </p:column>
-                                
-                                <p:column>
-                                    <f:facet name="header">
                                         <h:outputText value="Ações" />
                                     </f:facet>
+                                    <p:commandButton actionListener="clientes.xhtml"><span aria-hidden="true" class="icon-images"></span></p:commandButton>
                                     <p:commandButton actionListener="clientes.xhtml"><span aria-hidden="true" class="icon-pencil"></span></p:commandButton>
                                     <p:commandButton actionListener="clientes.xhtml"><span aria-hidden="true" class="icon-remove"></span></p:commandButton>
                                 </p:column>
